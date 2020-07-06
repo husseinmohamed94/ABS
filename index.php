@@ -13,7 +13,7 @@
     
     $posts=mysqli_query($db_connect , "select * from post order by created  desc ");
     if(mysqli_num_rows($posts) > 0){ 
-    while($post = mysqli_fetch_array($posts)){
+        while($post = mysqli_fetch_array($posts)){
         echo "
         <div>
         <a href='post.php?id=$post[id]'>
